@@ -1,0 +1,736 @@
+@media screen and (min-width:10px) and (max-width:380px) and (orientation: portrait) {
+  img#logo {
+    float: left;
+    margin: 10px 10px;
+    width: 35px;
+    height: 35px;
+    }
+    
+    nav {
+    float: left;
+    margin: 0px -15px;
+    }
+    
+    nav a {
+    padding: 0 4px;
+    font-size: 10px;
+    text-align: left;
+    }
+    
+    #homeSection h1 {
+
+    font-size: 16px;
+    color: #ffffff;
+    text-align: justify;
+    clear: both;
+    padding-top: 100px;
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    }
+    
+    #homeSection h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-align: justify;
+    clear: both;
+    font-style: italic;
+    padding-top: 40px;
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    }    
+    
+    div#prayerSection span h1 {
+    font-size: 20px;
+    font-family: 'Amaranth', sans-serif;
+    text-align: center;
+    padding-top: 30px;
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    }
+    
+    div#prayerSection span h2 {
+    font-size: 20px;
+    font-family: 'Amaranth', sans-serif;
+    text-align: center;
+    padding: 0;
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    }
+
+    div#prayertime{
+   `font-family: 'Amaranth', sans-serif;
+    color: #4d4d4d;
+    text-align: center;
+    clear: both;
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    }
+
+    div#prayertime h3{
+    font-size: 20px;
+    font-family: 'Amaranth', sans-serif;
+    }
+    
+    #eventSection h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+    clear: both;
+    padding-top: 60px;
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    }
+
+#eventSection h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    clear: both;
+    font-style: italic;
+    padding-top: 20px;
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    }
+    
+    div#map {
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    margin: 0 20px;
+    }
+
+    iframe {
+    width: 100%;
+    height: 400px;
+    }
+    
+    div#donationSection {
+    padding: 30px 0;
+    display: block;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    }
+    
+    p.text-muted {
+        font-size: 10px;
+    }
+
+}
+
+/* ----------------------------------------- */
+
+@media screen and (min-width:381px) and (max-width:424px) and (orientation: portrait) {
+  img#logo {
+    float: left;
+    margin: 10px 10px;
+    width: 40px;
+    height: 40px;
+    }
+    
+    nav {
+    float: left;
+    margin: 0px -15px;
+    }
+    
+    nav a {
+    padding: 0 4px;
+    font-size: 12px;
+    text-align: left;
+    }
+    
+    #homeSection h1 {
+
+    font-size: 18px;
+    color: #ffffff;
+    text-align: justify;
+    clear: both;
+    padding-top: 100px;
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    }
+    
+    #homeSection h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-align: justify;
+    clear: both;
+    font-style: italic;
+    padding-top: 40px;
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    }    
+    
+    div#prayerSection span h1 {
+    font-size: 22px;
+    font-family: 'Amaranth', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    }
+    
+    div#prayerSection span h2 {
+    font-size: 22px;
+    font-family: 'Amaranth', sans-serif;
+    text-align: center;
+    padding: 0;
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    }
+
+    div#prayertime{
+   `font-family: 'Amaranth', sans-serif;
+    color: #4d4d4d;
+    text-align: center;
+    clear: both;
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    }
+
+    div#prayertime h3{
+    font-size: 20px;
+    font-family: 'Amaranth', sans-serif;
+    }
+    
+    #eventSection h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+    clear: both;
+    padding-top: 60px;
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    }
+
+#eventSection h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    clear: both;
+    font-style: italic;
+    padding-top: 20px;
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    }
+    
+    div#map {
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    margin: 0 20px;
+    }
+
+    iframe {
+    width: 100%;
+    height: 550px;
+    }
+    
+    div#donationSection {
+    padding: 30px 0;
+    display: block;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    }
+    
+    p.text-muted {
+        font-size: 11px;
+    }
+
+}
+
+/* ----------------------------------------- */
+
+@media screen and (min-width:425px) and (max-width:767px) and (orientation: portrait) {
+  
+    img#logo {
+    float: left;
+    margin: 10px 10px;
+    width: 40px;
+    height: 40px;
+    }
+    
+    nav {
+    float: left;
+    margin: 0px -15px;
+    }
+    
+    nav a {
+    padding: 0 4px;
+    font-size: 12px;
+    text-align: left;
+    }
+    
+    #homeSection h1 {
+
+    font-size: 18px;
+    color: #ffffff;
+    text-align: justify;
+    clear: both;
+    padding-top: 100px;
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    }
+    
+    #homeSection h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-align: justify;
+    clear: both;
+    font-style: italic;
+    padding-top: 40px;
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    }    
+    
+    div#prayerSection span h1 {
+    font-size: 22px;
+    font-family: 'Amaranth', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    }
+    
+    div#prayerSection span h2 {
+    font-size: 22px;
+    font-family: 'Amaranth', sans-serif;
+    text-align: center;
+    padding: 0;
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    }
+
+    div#prayertime{
+   `font-family: 'Amaranth', sans-serif;
+    color: #4d4d4d;
+    text-align: center;
+    clear: both;
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    }
+
+    div#prayertime h3{
+    font-size: 20px;
+    font-family: 'Amaranth', sans-serif;
+    }
+    
+    #eventSection h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+    clear: both;
+    padding-top: 60px;
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    }
+
+#eventSection h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    clear: both;
+    font-style: italic;
+    padding-top: 20px;
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    }
+    
+    div#map {
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    margin: 0 20px;
+    }
+
+    iframe {
+    width: 100%;
+    height: 550px;
+    }
+    
+    div#donationSection {
+    padding: 30px 0;
+    display: block;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    }
+    
+    p.text-muted {
+        font-size: 11px;
+    }
+
+}
+
+/* ----------------------------------------- */
+
+@media screen and (min-width:768px) and (orientation: portrait) {
+    
+    #homeSection h1 {
+    font-size: 22px;
+    padding-top: 100px;
+    }
+    
+    #homeSection h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    padding-top: 40px;
+    }    
+    
+    div#prayerSection span h1 {
+    font-size: 32px;
+    font-family: 'Amaranth', sans-serif;
+    padding-top: 50px;
+    }
+    
+    div#prayerSection span h2 {
+    font-size: 32px;
+    padding: 0;
+    }
+
+    div#prayertime h3{
+    font-size: 20px;
+    }
+    
+    #eventSection h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    padding-top: 60px;
+    }
+
+    #eventSection h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    padding-top: 20px;
+    }
+    
+    div#map {
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    margin: 0 20px;
+    }
+
+    iframe {
+    width: 100%;
+    height: 550px;
+    }
+    
+    div#donationSection {
+    padding: 30px 0;
+    display: block;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    }
+    
+    p.text-muted {
+        font-size: 11px;
+    }
+
+}
+
+/* ----------------------------------------- */
+
+@media screen and (min-width:992px) and (max-width:1100px) and (orientation: portrait) {
+    
+    #homeSection h1 {
+    font-size: 26px;
+    padding-top: 100px;
+    }
+    
+    #homeSection h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    padding-top: 40px;
+    }    
+    
+    div#prayerSection span h1 {
+    font-size: 38px;
+    font-family: 'Amaranth', sans-serif;
+    padding-top: 50px;
+    }
+    
+    div#prayerSection span h2 {
+    font-size: 38px;
+    padding: 0;
+    }
+
+    div#prayertime h3{
+    font-size: 24px;
+    }
+    
+    #eventSection h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    padding-top: 60px;
+    }
+
+    #eventSection h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    padding-top: 20px;
+    }
+
+
+}
+
+/* ----------------------------------------- */
+
+@media screen and (min-width:768px) and (orientation: portrait) {
+    
+    #homeSection h1 {
+    font-size: 22px;
+    padding-top: 100px;
+    }
+    
+    #homeSection h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    padding-top: 40px;
+    }    
+    
+    div#prayerSection span h1 {
+    font-size: 32px;
+    font-family: 'Amaranth', sans-serif;
+    padding-top: 50px;
+    }
+    
+    div#prayerSection span h2 {
+    font-size: 32px;
+    padding: 0;
+    }
+
+    div#prayertime h3{
+    font-size: 20px;
+    }
+    
+    #eventSection h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    padding-top: 60px;
+    }
+
+    #eventSection h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    padding-top: 20px;
+    }
+    
+    div#map {
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    margin: 0 20px;
+    }
+
+    iframe {
+    width: 100%;
+    height: 550px;
+    }
+    
+    div#donationSection {
+    padding: 30px 0;
+    display: block;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    }
+    
+    p.text-muted {
+        font-size: 11px;
+    }
+
+}
+
+/* ----------------------------------------- */
+
+@media screen and (min-width:992px) and (max-width:1100px) and (orientation: portrait) {
+    
+    #homeSection h1 {
+    font-size: 26px;
+    padding-top: 100px;
+    }
+    
+    #homeSection h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    padding-top: 40px;
+    }    
+    
+    div#prayerSection span h1 {
+    font-size: 38px;
+    font-family: 'Amaranth', sans-serif;
+    padding-top: 50px;
+    }
+    
+    div#prayerSection span h2 {
+    font-size: 38px;
+    padding: 0;
+    }
+
+    div#prayertime h3{
+    font-size: 24px;
+    }
+    
+    #eventSection h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    padding-top: 60px;
+    }
+
+    #eventSection h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    padding-top: 20px;
+    }
+
+}
+
+/* ----------------------------------------- */
+
+@media screen and (max-height:420px) {
+  img#logo {
+    float: left;
+    margin: 10px 10px;
+    width: 35px;
+    height: 35px;
+    }
+    
+    nav {
+    float: left;
+    margin: 0px -15px;
+    }
+    
+    nav a {
+    padding: 0 4px;
+    font-size: 15px;
+    text-align: left;
+    }
+    
+    #homeSection h1 {
+
+    font-size: 14px;
+    color: #ffffff;
+    text-align: justify;
+    clear: both;
+    padding-top: 70px;
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    }
+    
+    #homeSection h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    color: #fff;
+    text-align: justify;
+    clear: both;
+    font-style: italic;
+    padding-top: 40px;
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    }    
+    
+    div#prayerSection span h1 {
+    font-size: 14px;
+    font-family: 'Amaranth', sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    }
+    
+    div#prayerSection span h2 {
+    font-size: 14px;
+    font-family: 'Amaranth', sans-serif;
+    text-align: center;
+    padding: 0;
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    }
+
+    div#prayertime{
+   `font-family: 'Amaranth', sans-serif;
+    color: #4d4d4d;
+    text-align: center;
+    clear: both;
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    margin-top: 20px;
+    }
+
+    div#prayertime h3{
+    font-size: 11px;
+    font-family: 'Amaranth', sans-serif;
+    }
+    
+    #eventSection h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+    clear: both;
+    padding-top: 60px;
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    }
+
+#eventSection h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    clear: both;
+    font-style: italic;
+    padding-top: 20px;
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    }
+    
+    div#map {
+    height: auto;
+    width: 100%;
+    padding-top: 20px;
+    margin: 0 20px;
+    }
+
+    iframe {
+    width: 100%;
+    height: 230px;
+    }
+    
+    div#donationSection {
+    padding: 5px 0;
+    display: block;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    }
+    
+    div#donationSection h4 {
+        font-size: 12px;
+    }
+    
+    div#donationSection i {
+        font-size: 12px;
+    }
+    
+    p.text-muted {
+        font-size: 8px;
+    }
+
+}
+
+/* ----------------------------------------- */
+
+
