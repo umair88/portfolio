@@ -34,7 +34,8 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #fff;@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+    color: #fff;
+    @import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
     padding: 0 15px;
     line-height: 50px;
     font-size: 20px;
@@ -290,3 +291,36 @@ div#donationSection {
 }
 
 /*---------------------------------End of Donation page layout----------------------------*/
+
+.demo {
+		width:30%;
+		height:100%;
+		border:1px solid #938DF3;
+		border-collapse:collapse;
+		padding:5px;
+        margin: 0 auto;
+	}
+
+.demo th {
+		border:1px solid #938DF3;
+		padding:5px;
+		background:#710FCA;
+        color: floralwhite;
+        text-align: center;
+	}
+
+.demo td {
+		border:1px solid #938DF3;
+		text-align:left;
+		padding:5px;
+        text-align: center;
+	}
+
+.demo td:hover {
+		border:1px solid #938DF3;
+		text-align:left;
+		padding:5px;
+        text-align: center;
+        background: #938DF3;
+        color: floralwhite;
+	}
