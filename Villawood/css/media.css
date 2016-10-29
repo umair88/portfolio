@@ -14,7 +14,8 @@
     nav a {
     padding: 0 4px;
     font-size: 10px;
-    text-align: left;
+    text-align: center;
+    width: 47px;
     }
     
     #homeSection h1 {
@@ -172,7 +173,8 @@
     nav a {
     padding: 0 4px;
     font-size: 12px;
-    text-align: left;
+    text-align: center;
+    width: 60px;
     }
     
     #homeSection h1 {
@@ -331,7 +333,8 @@
     nav a {
     padding: 0 4px;
     font-size: 12px;
-    text-align: left;
+    text-align: center;
+    width: 60px;
     }
     
     #homeSection h1 {
@@ -844,7 +847,8 @@
     nav a {
     padding: 0 4px;
     font-size: 15px;
-    text-align: left;
+    text-align: center;
+    width: 65px;
     }
     
     #homeSection h1 {
