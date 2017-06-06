@@ -1,0 +1,76 @@
+body {
+    background: linear-gradient(to right bottom, #648880, #293f50);
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 15px 15px;
+}
+
+
+/* ===========================
+   ====== Contact Form ======= 
+   =========================== */
+
+label {
+    /* display: inline-block; */
+    /* max-width: 100%; */
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: #fff;
+}
+
+input,
+textarea,
+select {
+    padding: 10px;
+    border: 1px solid #E5E5E5;
+    width: 200px;
+    color: #000;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+}
+
+textarea {
+    width: 400px;
+    height: 150px;
+    max-width: 400px;
+    line-height: 18px;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+    border-color: 1px solid #C9C9C9;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+}
+
+.form label {
+    margin: 15px 30px;
+    color: #999999;
+    margin-bottom: 5px;
+    font-weight: 700;
+}

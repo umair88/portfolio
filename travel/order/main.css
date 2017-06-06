@@ -1,0 +1,97 @@
+#slideone {
+    background-image: url(/wp-content/uploads/2015/08/slider1-min.jpg);
+}
+
+#slideTwo {
+    background-image: url(/wp-content/uploads/2015/08/slide-image-3-min.jpg);
+}
+
+#slideThree {
+    background-image: url(/wp-content/uploads/2015/08/slide-image-2-min1.jpg);
+}
+
+.txt1 {
+    background-color: #ffe200;
+    color: #484848;
+    float: left;
+    padding: 10px;
+    margin-left: 13%;
+    text-shadow: 1px 1px grey;
+    font-size: 18px;
+}
+
+.inner {
+    float: left;
+    margin-top: 24%;
+    width: 100%;
+}
+
+.gallery-item-copy-wrapper {
+    width: 100%;
+}
+
+.txt2 {
+    float: left;
+    font-size: 4em;
+    color: white;
+    text-shadow: 2px 1px #675151;
+    width: 100%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.txt3 {
+    float: left;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 17px;
+    text-shadow: 2px 1px #675151;
+}
+
+@media screen and (max-width: 960px) {
+    .inner {
+        margin-top: 40vw;
+    }
+    .enhanced-gallery .gallery {
+        height: 140vw;
+        overflow: hidden;
+    }
+    article {
+        width: 100vw !important;
+        height: 100% !important;
+    }
+    .txt2 {
+        width: 80%;
+        font-size: 28px;
+        margin-left: 8%;
+        font-size: 50px;
+    }
+    .txt1 {
+        font-size: 16px;
+    }
+    .txt3 {
+        float: left;
+        color: white;
+        text-align: center;
+        width: 75%;
+        font-size: 17px;
+        text-shadow: 2px 1px #675151;
+        margin-left: 10%;
+    }
+}
+
+.tp-caption a {
+    color: #ff7302;
+    text-shadow: none;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out
+}
+
+.tp-caption a:hover {
+    color: #ffa902
+}

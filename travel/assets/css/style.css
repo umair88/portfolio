@@ -1,0 +1,228 @@
+.menz {
+        -webkit-transition: 0.1s -webkit-transform linear;
+        transition: 0.1s -webkit-transform linear;
+        transition: 0.1s transform linear;
+        transition: 0.1s transform linear, 0.1s -webkit-transform linear;
+        position: relative;
+        background: 0;
+        float: left;
+        margin: 1rem;
+        height: 0rem;
+        width: 3.5rem;
+        z-index: 1;
+        outline: 0;
+        padding: 0;
+        margin-top: 45px;
+        border: 0;
+        z-index: 9999999;
+        display: none;
+    }
+.attention {
+  background: #ffaf00;
+  color:black!important;
+}
+.footermenu li{
+  display: block;float: left;
+    margin-left: 35px;
+}
+    .bae,
+    .bae::before,
+    .bae::after {
+        -webkit-transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s -webkit-transform linear;
+        transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s -webkit-transform linear;
+        transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear;
+        transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear, 0.2s -webkit-transform linear;
+        position: absolute;
+        background: #ffaf00;
+        margin: auto;
+        width: 100%;
+        height: 0.3rem;
+        content: '';
+        top: 50%;
+        left: 0;
+    }
+
+    .bae {
+        margin-top: -0.2rem;
+    }
+
+    .bae::before {
+        top: -1.2rem;
+    }
+
+    .bae::after {
+        top: 1.2rem;
+    }
+
+    .bae::before,
+    .bar::after {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    .active .bae {
+        background: 0;
+    }
+
+    .active .bae::before {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .active .bae::after {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    .active .bae::before,
+    .active .bae::after {
+        top: 0;
+    }
+
+    .active .bae,
+    .active .bae::before,
+    .active .bae::after {
+        -webkit-transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s -webkit-transform linear 0.2s;
+        transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s -webkit-transform linear 0.2s;
+        transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s;
+        transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s, 0.2s -webkit-transform linear 0.2s;
+    }
+
+    navz {
+        border-top: 4px solid #ffaf00;
+        width: 250px;
+        color: #484848;
+        height: 100%;
+        background: #ffffff;
+        position: fixed;
+        -webkit-transform: translateX(-340px);
+        transform: translateX(-340px);
+        -ms-transform: translateX(-340px);
+        -moz-transform: translateX(-340px);
+        -o-transform: translateX(-340px);
+        -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
+        transition: -webkit-transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
+        transition: transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
+        transition: transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91), -webkit-transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
+        margin-top: 7.8rem;
+        z-index: 9999;
+        display: none;
+        transition:0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
+
+    }
+
+    .menz-open navz {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        overflow: scroll;
+    }
+
+    navz ul {
+        margin: 0;
+        list-style: none;
+        padding: 0;
+    }
+
+    navz ul li {
+        padding: 20px 5px;
+        border-bottom: 1px solid #dbdbdb;
+        font-size: 2rem;
+    }
+    /*navz ul li::after {
+    content: '+';
+    position: absolute;
+    right: 25px;
+}*/
+
+    navz ul a li:hover {
+        background: #ffe200;
+        color: white;
+    }
+
+    navz ul a li {
+        color: #484848;
+        font-size: 15px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        border-bottom: none;
+    }
+
+    navz ul a li::after {
+        content: '';
+    }
+}    #main-header {
+        background-color: transparent;
+    }
+
+    .main-nav .menu > li > a {
+        padding-top: 38px;
+        padding-right: 25px;
+        padding-bottom: 38px;
+        padding-left: 25px;
+    }
+
+    .exc-infobar,
+    .exc-infobar a {
+        color: #ffffff;
+    }
+
+    .exc-infobar {
+        background-color: rgba(255, 255, 255, 1);
+    }
+    #desktopForm{display: block;}
+    #mobileForm{display: none;}
+#pacbanner { margin-top: 10vw}
+.breadcrumb li a , .text-upper{}
+    @media(max-width:991px) {
+      #pacbanner{    margin-top: 25vw !important; color: white!important}
+      .foot-box{float: left;width: 100%}
+      .footermenu{padding-left: 0px;}
+      .footermenu li{margin-left: 0px;width: 50%;height: 36px; font-size: 14px;text-align: center;}
+      .footermenu li:nth-child(1){width: 100%}
+      .enhanced-gallery .dashnav li{display: none !important;}
+      .ft-image img{width: 100%;}
+      .pkgBox{margin-top: 11px;}
+      .uramhBtn{margin-top: 3px;}
+      #desktopForm{display: none;}
+      #mobileForm{display: block;}
+      .offer-box{ bottom: 90% !important}
+      .offer-top{padding: 10px; margin-left: 15%;width: 50%;}
+      .offer-bottom{padding: 10px;margin-left: 15%;width: 50%;}
+
+        .menz {
+            display: block!important;
+            height: 0.7rem !important;
+        }
+        .myslideFix {
+            font-size: 1em !important;
+            width: 66vw !important;
+        }
+        .myslideFix2 {
+            font-size: 1em !important;
+        }
+        .navmobileFix {
+            // margin-left: 4%;
+            // margin-right: 35%;
+        }
+        .top-fields,
+        .bottom-fields {
+            background-color: #FFF;
+            padding: 0px;
+        }
+        .pkgBox {
+            width: 100% !important;
+            margin-right: 0px !important;
+        }
+        navz {
+            margin-top: 10.1rem !important;
+        }
+        #hj {
+            margin-top: 3px;
+        }
+        .fillter {
+            font-size: 18px;
+        }
+    }

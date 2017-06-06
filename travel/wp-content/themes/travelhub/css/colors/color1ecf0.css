@@ -1,0 +1,45 @@
+
+.caption-yellow,
+.plan-banner,
+.submit-btn input,
+.ft-data,
+.btn-primary:hover, .btn-primary:focus,
+.featured-btm,
+.nav-tabs,
+.offer-bottom,
+.btn-primary,
+.dropcap p:first-child:first-letter, .highlight,
+.list-style3 li:before, .list-style4 li:before,
+.pricing-table:hover, .pricing-table-featured, .pricing-table li.table-heading-multiple,
+.pricing-tables-2 .pricing-table li.table-heading-multiple:nth-child(2n+1), .pricing-tables-2 .pricing-table li.table-heading-multiple:nth-child(2n), .pricing-tables-2 .pricing-table li.table-heading,
+.pricing-tables-3 .pricing-table li.table-heading, .pricing-tables-2 .pricing-table li.table-heading-two,
+.comment-form input[type="submit"],
+#wp-calendar caption,
+.widget input[type="submit"],
+.widget_tag_cloud a,
+.searchform input[type="submit"] {
+    background-color: #fff;
+}
+#btnSubmitForm{
+	  background-color: #ffaf00;
+}
+
+#ft-footer a,
+.header-banner h1,
+.header-banner h2,
+.featured-cr,
+.featured-cr a,
+.tl-author-title,
+.breadcrumb a:hover,
+#main-menu  li:hover > a {
+    color: rgb(72, 72, 72);
+}
+.tl-author-title{    font-size: 15px}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+#main-menu li ul,
+.widget_tag_cloud a{
+	/*border-color:  #FFE200;*/
+}

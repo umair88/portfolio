@@ -1,0 +1,1668 @@
+html.no-touch .finite-gallery.showing-first-slide .paddlenav-arrow-container-previous {
+    display: none;
+    opacity: 0
+}
+
+html.no-touch .finite-gallery.showing-last-slide .paddlenav-arrow-container-next {
+    display: none;
+    opacity: 0
+}
+
+html.touch .paddlenav-homepage {
+    display: none
+}
+
+.enhanced-gallery .main {
+    position: relative;
+    top: 0
+}
+
+.enhanced-gallery .gallery-container {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 100vh;
+    max-height: 100%;
+    min-height: 540px
+}
+
+@media only screen and (max-width: 1068px) {
+    .enhanced-gallery .gallery-container {
+        max-height: 960px;
+        min-height: 500px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .enhanced-gallery .gallery-container {
+        max-height: 640px;
+        min-height: 420px
+    }
+}
+
+.enhanced-gallery .with-promos .gallery-container {
+    height: -webkit-calc(100vh - 76px);
+    height: calc(100vh - 76px)
+}
+
+@media only screen and (min-width: 1442px) {
+    .enhanced-gallery .with-promos .gallery-container {
+        height: -webkit-calc(100vh - 200px);
+        height: calc(100vh - 200px)
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .enhanced-gallery .with-promos .gallery-container {
+        height: -webkit-calc(100vh - 80px);
+        height: calc(100vh - 80px)
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .enhanced-gallery.touch .gallery-container {
+        max-height: 100%
+    }
+}
+
+.enhanced-gallery .gallery {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 100%
+}
+
+.enhanced-gallery .gallery-slide-wrapper {
+    height: 100%
+}
+
+.enhanced-gallery .gallery-item {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    color: #333;
+    will-change: transform;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0)
+}
+
+.enhanced-gallery .gallery-item-dark {
+    color: #fff
+}
+
+.enhanced-gallery .gallery-item-currentitem {
+    z-index: 2;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+
+.enhanced-gallery .gallery-item-copy-wrapper {
+    position: absolute;
+    z-index: 1000;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.enhanced-gallery .gallery-item-image-element {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 110%
+}
+
+.enhanced-gallery .dashnav {
+    position: absolute;
+    z-index: 1000;
+    bottom: 20px;
+    width: 60%;
+    left: 20%;
+    text-align: center;
+    line-height: 1
+}
+
+@media only screen and (max-width: 735px) {
+    .enhanced-gallery .dashnav {
+        bottom: 10px
+    }
+}
+
+.enhanced-gallery .dashnav ul {
+    display: inline-block
+}
+
+.enhanced-gallery .dashnav li {
+    list-style: none;
+    margin: 0 5px;
+    width: 7em;
+    height: 22px;
+    float: left;
+    position: relative
+}
+
+.enhanced-gallery .dashnav .dashnav-item {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    padding: 10px 0;
+    opacity: 1;
+    -webkit-transition: opacity 500ms ease;
+    transition: opacity 500ms ease;
+    box-sizing: content-box
+}
+
+.enhanced-gallery .dashnav .dashnav-item .dashnav-label {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0
+}
+
+.enhanced-gallery .dashnav .dashnav-item:hover {
+    opacity: 1;
+    -webkit-transition: opacity 500ms ease;
+    transition: opacity 500ms ease
+}
+
+.enhanced-gallery .dashnav .dashnav-item.current {
+    opacity: 1;
+    -webkit-transition: opacity 500ms ease;
+    transition: opacity 500ms ease;
+    cursor: default
+}
+
+.enhanced-gallery .dashnav .dashnav-item.current .dashnav-progress {
+    opacity: 1
+}
+
+.enhanced-gallery .dashnav .dashnav-dash {
+    position: relative;
+    z-index: 1;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.enhanced-gallery .dashnav .dashnav-progress {
+    opacity: 0;
+    position: absolute;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    -webkit-transform-origin: left;
+    -ms-transform-origin: left;
+    transform-origin: left;
+    height: 100%;
+    background: #ffaf00;
+}
+
+.is-autoplaying .enhanced-gallery .dashnav .dashnav-progress {
+    opacity: 1
+}
+
+.is-interacting .enhanced-gallery .dashnav .dashnav-progress {
+    -webkit-transition: opacity 500ms ease;
+    transition: opacity 500ms ease
+}
+
+.no-js .paddlenav,
+.no-js .dashnav,
+.no-enhanced-gallery .paddlenav,
+.no-enhanced-gallery .dashnav {
+    display: none
+}
+
+.no-js .gallery-item,
+.no-enhanced-gallery .gallery-item {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding-top: 80px
+}
+
+@media only screen and (max-width: 1068px) {
+    .no-js .gallery-item,
+    .no-enhanced-gallery .gallery-item {
+        padding-top: 70px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .no-js .gallery-item,
+    .no-enhanced-gallery .gallery-item {
+        padding-top: 50px
+    }
+}
+
+.no-js .gallery-item-dark,
+.no-enhanced-gallery .gallery-item-dark {
+    color: #fff
+}
+
+.no-js .gallery-item-copy-wrapper,
+.no-enhanced-gallery .gallery-item-copy-wrapper {
+    position: relative;
+    z-index: 2;
+    text-align: center
+}
+
+.no-js .homepage-headline,
+.no-enhanced-gallery .homepage-headline {
+    margin-top: 0.3em
+}
+
+.no-js .gallery-item-image-element,
+.no-enhanced-gallery .gallery-item-image-element {
+    position: relative;
+    z-index: 1
+}
+
+.gallery-container #homepage-gallery-ipad *:not(.backing-link) {
+    pointer-events: none
+}
+
+.gallery-container #homepage-gallery-ipad a:not(.backing-link) {
+    pointer-events: all;
+    position: relative;
+    z-index: 4
+}
+
+.gallery-container #homepage-gallery-ipad .backing-link,
+.gallery-container #homepage-gallery-ipad .backing-link:hover {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: auto;
+    right: auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: all;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    opacity: 1;
+    z-index: 2
+}
+
+html.ie .gallery-container #homepage-gallery-ipad .backing-link,
+html.ie .gallery-container #homepage-gallery-ipad .backing-link:hover {
+    z-index: 5
+}
+
+.gallery-container #homepage-gallery-ipad .gallery-item-content {
+    background: #fafafa;
+    height: 100%;
+    display: block;
+    z-index: 1000;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none
+}
+
+.gallery-container #homepage-gallery-ipad .gallery-item-copy-wrapper {
+    position: absolute;
+    top: 44px;
+    height: 26%;
+    left: 0;
+    right: 0
+}
+
+@media only screen and (max-width: 735px) {
+    .gallery-container #homepage-gallery-ipad .gallery-item-copy-wrapper {
+        top: 48px;
+        height: 33%
+    }
+}
+
+.gallery-container #homepage-gallery-ipad .gallery-item-copy-wrapper .inner {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.gallery-container #homepage-gallery-ipad .gallery-item-image-element {
+    top: -webkit-calc(44px + 23%);
+    top: calc(44px + 23%);
+    height: -webkit-calc(77% - 54px);
+    height: calc(77% - 54px)
+}
+
+@media only screen and (max-width: 735px) {
+    .gallery-container #homepage-gallery-ipad .gallery-item-image-element {
+        top: -webkit-calc(18% + 83px);
+        top: calc(18% + 83px);
+        height: -webkit-calc(82% - 93px);
+        height: calc(82% - 93px)
+    }
+}
+
+.gallery-container #homepage-gallery-ipad .gallery-item-image-element .gallery-image-ipad {
+    background-repeat: no-repeat;
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 0;
+    background-size: auto 100%;
+    background-position: center center;
+    max-height: 79.39509vw
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 1.5dppx),
+(-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi) {
+    .gallery-container #homepage-gallery-ipad .gallery-item-image-element .gallery-image-ipad {
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .gallery-container #homepage-gallery-ipad .gallery-item-image-element .gallery-image-ipad {
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .gallery-container #homepage-gallery-ipad .gallery-item-image-element .gallery-image-ipad {
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .gallery-container #homepage-gallery-ipad .gallery-item-image-element .gallery-image-ipad {
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .gallery-container #homepage-gallery-ipad .gallery-item-image-element .gallery-image-ipad {
+    }
+}
+
+.no-enhanced-gallery .gallery-container #homepage-gallery-ipad {
+    height: 757px;
+    padding-top: 0
+}
+
+@media only screen and (max-width: 1068px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-ipad {
+        height: 620px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-ipad {
+        height: 450px
+    }
+}
+
+.no-enhanced-gallery .gallery-container #homepage-gallery-ipad .gallery-item-copy-wrapper {
+    height: auto;
+    top: 70px;
+    min-height: 0
+}
+
+@media only screen and (max-width: 1068px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-ipad .gallery-item-copy-wrapper {
+        top: 60px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-ipad .gallery-item-copy-wrapper {
+        top: 50px
+    }
+}
+
+.no-enhanced-gallery .gallery-container #homepage-gallery-ipad .gallery-item-copy-wrapper .inner {
+    position: relative;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    top: 0
+}
+
+.no-enhanced-gallery .gallery-container #homepage-gallery-ipad .gallery-item-image-element {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: relative
+}
+
+.no-enhanced-gallery .gallery-container #homepage-gallery-ipad .gallery-image-ipad {
+    width: 936px;
+    height: 530px;
+    background-size: 936px 530px;
+    background-repeat: no-repeat;
+    left: 50%;
+    margin-left: -468px;
+    position: relative;
+    background-position: top center;
+    max-height: none;
+    top: 220px;
+    bottom: auto;
+    position: absolute;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 1.5dppx),
+(-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-ipad .gallery-image-ipad {
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-ipad .gallery-image-ipad {
+        width: 794px;
+        height: 450px;
+        background-size: 794px 450px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-ipad .gallery-image-ipad {
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-ipad .gallery-image-ipad {
+        width: 468px;
+        height: 265px;
+        background-size: 468px 265px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-ipad .gallery-image-ipad {
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-ipad .gallery-image-ipad {
+        left: 50%;
+        margin-left: -397px;
+        position: relative
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-ipad .gallery-image-ipad {
+        left: 50%;
+        margin-left: -234px;
+        position: relative
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-ipad .gallery-image-ipad {
+        top: 180px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-ipad .gallery-image-ipad {
+        top: 160px
+    }
+}
+
+.gallery-container #homepage-gallery-iphone-7 *:not(.backing-link) {
+    pointer-events: none
+}
+
+.gallery-container #homepage-gallery-iphone-7 a:not(.backing-link) {
+    pointer-events: all;
+    position: relative;
+    z-index: 4
+}
+
+.gallery-container #homepage-gallery-iphone-7 .backing-link,
+.gallery-container #homepage-gallery-iphone-7 .backing-link:hover {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: auto;
+    right: auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: all;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    opacity: 1;
+    z-index: 2
+}
+
+html.ie .gallery-container #homepage-gallery-iphone-7 .backing-link,
+html.ie .gallery-container #homepage-gallery-iphone-7 .backing-link:hover {
+    z-index: 5
+}
+
+.gallery-container #homepage-gallery-iphone-7 .eyebrow {
+    font-size: 22px;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: .016em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    display: block;
+    margin-bottom: 20px
+}
+
+.gallery-container #homepage-gallery-iphone-7 .eyebrow:lang(ar) {
+    font-family: "SF Pro AR", "SF Pro Gulf", "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.gallery-container #homepage-gallery-iphone-7 .eyebrow:lang(ja) {
+    font-family: "SF Pro JP", "SF Pro Display", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.gallery-container #homepage-gallery-iphone-7 .eyebrow:lang(ko) {
+    font-family: "SF Pro KR", "SF Pro Display", "SF Pro Icons", "Apple Gothic", "HY Gulim", "MalgunGothic", "HY Dotum", "Lexi Gulim", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.gallery-container #homepage-gallery-iphone-7 .eyebrow:lang(th) {
+    font-family: "SF Pro TH", "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.gallery-container #homepage-gallery-iphone-7 .eyebrow:lang(zh-CN) {
+    font-family: "SF Pro SC", "SF Pro Display", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.gallery-container #homepage-gallery-iphone-7 .eyebrow:lang(zh-HK) {
+    font-family: "SF Pro HK", "SF Pro Display", "SF Pro Icons", "PingFang HK", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.gallery-container #homepage-gallery-iphone-7 .eyebrow:lang(zh-MO) {
+    font-family: "SF Pro TC", "SF Pro Display", "SF Pro Icons", "PingFang TC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.gallery-container #homepage-gallery-iphone-7 .eyebrow:lang(zh-TW) {
+    font-family: "SF Pro TC", "SF Pro Display", "SF Pro Icons", "PingFang TC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+@media only screen and (max-width: 1068px) {
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow {
+        font-size: 20px;
+        line-height: 1;
+        font-weight: 400;
+        letter-spacing: .017em;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow:lang(ar) {
+        font-family: "SF Pro AR", "SF Pro Gulf", "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow:lang(ja) {
+        font-family: "SF Pro JP", "SF Pro Display", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow:lang(ko) {
+        font-family: "SF Pro KR", "SF Pro Display", "SF Pro Icons", "Apple Gothic", "HY Gulim", "MalgunGothic", "HY Dotum", "Lexi Gulim", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow:lang(th) {
+        font-family: "SF Pro TH", "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow:lang(zh-CN) {
+        font-family: "SF Pro SC", "SF Pro Display", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow:lang(zh-HK) {
+        font-family: "SF Pro HK", "SF Pro Display", "SF Pro Icons", "PingFang HK", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow:lang(zh-MO) {
+        font-family: "SF Pro TC", "SF Pro Display", "SF Pro Icons", "PingFang TC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow:lang(zh-TW) {
+        font-family: "SF Pro TC", "SF Pro Display", "SF Pro Icons", "PingFang TC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow {
+        font-size: 19px;
+        line-height: 1;
+        font-weight: 400;
+        letter-spacing: .018em;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow:lang(ar) {
+        font-family: "SF Pro AR", "SF Pro Gulf", "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow:lang(ja) {
+        font-family: "SF Pro JP", "SF Pro Display", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow:lang(ko) {
+        font-family: "SF Pro KR", "SF Pro Display", "SF Pro Icons", "Apple Gothic", "HY Gulim", "MalgunGothic", "HY Dotum", "Lexi Gulim", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow:lang(th) {
+        font-family: "SF Pro TH", "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow:lang(zh-CN) {
+        font-family: "SF Pro SC", "SF Pro Display", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow:lang(zh-HK) {
+        font-family: "SF Pro HK", "SF Pro Display", "SF Pro Icons", "PingFang HK", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow:lang(zh-MO) {
+        font-family: "SF Pro TC", "SF Pro Display", "SF Pro Icons", "PingFang TC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow:lang(zh-TW) {
+        font-family: "SF Pro TC", "SF Pro Display", "SF Pro Icons", "PingFang TC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow {
+        margin-bottom: 18px
+    }
+}
+
+.gallery-container #homepage-gallery-iphone-7 .eyebrow+* {
+    margin-top: 0
+}
+
+.gallery-container #homepage-gallery-iphone-7 .eyebrow-hero {
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: .015em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.gallery-container #homepage-gallery-iphone-7 .eyebrow-hero:lang(ar) {
+    font-family: "SF Pro AR", "SF Pro Gulf", "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.gallery-container #homepage-gallery-iphone-7 .eyebrow-hero:lang(ja) {
+    font-family: "SF Pro JP", "SF Pro Display", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.gallery-container #homepage-gallery-iphone-7 .eyebrow-hero:lang(ko) {
+    font-family: "SF Pro KR", "SF Pro Display", "SF Pro Icons", "Apple Gothic", "HY Gulim", "MalgunGothic", "HY Dotum", "Lexi Gulim", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.gallery-container #homepage-gallery-iphone-7 .eyebrow-hero:lang(th) {
+    font-family: "SF Pro TH", "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.gallery-container #homepage-gallery-iphone-7 .eyebrow-hero:lang(zh-CN) {
+    font-family: "SF Pro SC", "SF Pro Display", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.gallery-container #homepage-gallery-iphone-7 .eyebrow-hero:lang(zh-HK) {
+    font-family: "SF Pro HK", "SF Pro Display", "SF Pro Icons", "PingFang HK", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.gallery-container #homepage-gallery-iphone-7 .eyebrow-hero:lang(zh-MO) {
+    font-family: "SF Pro TC", "SF Pro Display", "SF Pro Icons", "PingFang TC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.gallery-container #homepage-gallery-iphone-7 .eyebrow-hero:lang(zh-TW) {
+    font-family: "SF Pro TC", "SF Pro Display", "SF Pro Icons", "PingFang TC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+@media only screen and (max-width: 1068px) {
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow-hero {
+        font-size: 22px;
+        line-height: 1;
+        font-weight: 400;
+        letter-spacing: .016em;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow-hero:lang(ar) {
+        font-family: "SF Pro AR", "SF Pro Gulf", "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow-hero:lang(ja) {
+        font-family: "SF Pro JP", "SF Pro Display", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow-hero:lang(ko) {
+        font-family: "SF Pro KR", "SF Pro Display", "SF Pro Icons", "Apple Gothic", "HY Gulim", "MalgunGothic", "HY Dotum", "Lexi Gulim", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow-hero:lang(th) {
+        font-family: "SF Pro TH", "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow-hero:lang(zh-CN) {
+        font-family: "SF Pro SC", "SF Pro Display", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow-hero:lang(zh-HK) {
+        font-family: "SF Pro HK", "SF Pro Display", "SF Pro Icons", "PingFang HK", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow-hero:lang(zh-MO) {
+        font-family: "SF Pro TC", "SF Pro Display", "SF Pro Icons", "PingFang TC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow-hero:lang(zh-TW) {
+        font-family: "SF Pro TC", "SF Pro Display", "SF Pro Icons", "PingFang TC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow-hero {
+        font-size: 21px;
+        line-height: 1;
+        font-weight: 400;
+        letter-spacing: .016em;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow-hero:lang(ar) {
+        font-family: "SF Pro AR", "SF Pro Gulf", "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow-hero:lang(ja) {
+        font-family: "SF Pro JP", "SF Pro Display", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow-hero:lang(ko) {
+        font-family: "SF Pro KR", "SF Pro Display", "SF Pro Icons", "Apple Gothic", "HY Gulim", "MalgunGothic", "HY Dotum", "Lexi Gulim", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow-hero:lang(th) {
+        font-family: "SF Pro TH", "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow-hero:lang(zh-CN) {
+        font-family: "SF Pro SC", "SF Pro Display", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow-hero:lang(zh-HK) {
+        font-family: "SF Pro HK", "SF Pro Display", "SF Pro Icons", "PingFang HK", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow-hero:lang(zh-MO) {
+        font-family: "SF Pro TC", "SF Pro Display", "SF Pro Icons", "PingFang TC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+    .gallery-container #homepage-gallery-iphone-7 .eyebrow-hero:lang(zh-TW) {
+        font-family: "SF Pro TC", "SF Pro Display", "SF Pro Icons", "PingFang TC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+}
+
+.gallery-container #homepage-gallery-iphone-7 .gallery-item-content {
+    background: #cc3341;
+    height: 100%;
+    display: block;
+    z-index: 1000;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none
+}
+
+.gallery-container #homepage-gallery-iphone-7 .gallery-item-copy-wrapper {
+    position: absolute;
+    top: 44px;
+    height: 30%;
+    left: 0;
+    right: 0;
+    min-height: 220px
+}
+
+@media only screen and (max-width: 1068px) {
+    .gallery-container #homepage-gallery-iphone-7 .gallery-item-copy-wrapper {
+        min-height: 200px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .gallery-container #homepage-gallery-iphone-7 .gallery-item-copy-wrapper {
+        top: 48px;
+        height: 33%;
+        min-height: 0
+    }
+}
+
+.gallery-container #homepage-gallery-iphone-7 .gallery-item-copy-wrapper .inner {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.gallery-container #homepage-gallery-iphone-7 .gallery-item-copy-wrapper .eyebrow {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    margin-bottom: 20px;
+    padding: 2px 8px
+}
+
+.gallery-container #homepage-gallery-iphone-7 .gallery-item-copy-wrapper .eyebrow:lang(ar) {
+    font-family: "SF Pro AR", "SF Pro Gulf", "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.gallery-container #homepage-gallery-iphone-7 .gallery-item-copy-wrapper .eyebrow:lang(ja) {
+    font-family: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.gallery-container #homepage-gallery-iphone-7 .gallery-item-copy-wrapper .eyebrow:lang(ko) {
+    font-family: "SF Pro KR", "SF Pro Text", "SF Pro Icons", "Apple Gothic", "HY Gulim", "MalgunGothic", "HY Dotum", "Lexi Gulim", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.gallery-container #homepage-gallery-iphone-7 .gallery-item-copy-wrapper .eyebrow:lang(th) {
+    font-family: "SF Pro TH", "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.gallery-container #homepage-gallery-iphone-7 .gallery-item-copy-wrapper .eyebrow:lang(zh-CN) {
+    font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.gallery-container #homepage-gallery-iphone-7 .gallery-item-copy-wrapper .eyebrow:lang(zh-HK) {
+    font-family: "SF Pro HK", "SF Pro Text", "SF Pro Icons", "PingFang HK", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.gallery-container #homepage-gallery-iphone-7 .gallery-item-copy-wrapper .eyebrow:lang(zh-MO) {
+    font-family: "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.gallery-container #homepage-gallery-iphone-7 .gallery-item-copy-wrapper .eyebrow:lang(zh-TW) {
+    font-family: "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+@media only screen and (max-width: 735px) {
+    .gallery-container #homepage-gallery-iphone-7 .gallery-item-copy-wrapper .eyebrow {
+        margin-bottom: 5px
+    }
+}
+
+.gallery-container #homepage-gallery-iphone-7 .gallery-item-copy-wrapper .logo-image-product-red {
+    display: inline-block;
+    margin-bottom: -15px;
+    margin-right: -51px;
+    width: 238px;
+    height: 67px;
+    background-size: 238px 67px;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 1.5dppx),
+(-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi) {
+    .gallery-container #homepage-gallery-iphone-7 .gallery-item-copy-wrapper .logo-image-product-red {
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .gallery-container #homepage-gallery-iphone-7 .gallery-item-copy-wrapper .logo-image-product-red {
+        width: 214px;
+        height: 60px;
+        background-size: 214px 60px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .gallery-container #homepage-gallery-iphone-7 .gallery-item-copy-wrapper .logo-image-product-red {
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .gallery-container #homepage-gallery-iphone-7 .gallery-item-copy-wrapper .logo-image-product-red {
+        width: 148px;
+        height: 42px;
+        background-size: 148px 42px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .gallery-container #homepage-gallery-iphone-7 .gallery-item-copy-wrapper .logo-image-product-red {
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .gallery-container #homepage-gallery-iphone-7 .gallery-item-copy-wrapper .logo-image-product-red {
+        margin-bottom: -14px;
+        margin-right: -49px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .gallery-container #homepage-gallery-iphone-7 .gallery-item-copy-wrapper .logo-image-product-red {
+        margin-bottom: -10px;
+        margin-right: -24px
+    }
+}
+
+.gallery-container #homepage-gallery-iphone-7 .gallery-image-iphone {
+    position: absolute;
+    z-index: 1;
+    top: -webkit-calc(23% + 44px);
+    top: calc(23% + 44px);
+    height: -webkit-calc(100% - 23% - 44px);
+    height: calc(100% - 23% - 44px);
+    bottom: auto;
+    min-height: 550px;
+    right: 0;
+    left: 0;
+    background-position: bottom center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 1.5dppx),
+(-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi) {
+    .gallery-container #homepage-gallery-iphone-7 .gallery-image-iphone {
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .gallery-container #homepage-gallery-iphone-7 .gallery-image-iphone {
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .gallery-container #homepage-gallery-iphone-7 .gallery-image-iphone {
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .gallery-container #homepage-gallery-iphone-7 .gallery-image-iphone {
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .gallery-container #homepage-gallery-iphone-7 .gallery-image-iphone {
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .gallery-container #homepage-gallery-iphone-7 .gallery-image-iphone {
+        top: -webkit-calc(25% + 44px);
+        top: calc(25% + 44px);
+        height: -webkit-calc(100% - 25% - 44px);
+        height: calc(100% - 25% - 44px)
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .gallery-container #homepage-gallery-iphone-7 .gallery-image-iphone {
+        top: -webkit-calc(23% + 48px);
+        top: calc(23% + 48px);
+        height: -webkit-calc(100% - 27% - 48px);
+        height: calc(100% - 27% - 48px)
+    }
+}
+
+@media (max-height: 744px) {
+    .gallery-container #homepage-gallery-iphone-7 .gallery-image-iphone {
+        top: -webkit-calc(30% + 44px);
+        top: calc(30% + 44px)
+    }
+}
+
+@media only screen and (min-width: 1442px) and (max-height: 892px) {
+    .gallery-container #homepage-gallery-iphone-7 .gallery-image-iphone {
+        top: -webkit-calc(30% + 44px);
+        top: calc(30% + 44px)
+    }
+}
+
+@media screen and (max-aspect-ratio: 9999 / 1) and (min-aspect-ratio: 19 / 10) and (min-width: 1069px) and (max-width: 144200px) {
+    .gallery-container #homepage-gallery-iphone-7 .gallery-image-iphone {
+        top: -webkit-calc(30% + 44px);
+        top: calc(30% + 44px)
+    }
+}
+
+@media screen and (max-aspect-ratio: 75 / 100) and (min-aspect-ratio: 1 / 10000) and (min-width: 0px) and (max-width: 1068px) {
+    .gallery-container #homepage-gallery-iphone-7 .gallery-image-iphone {
+        left: 8%;
+        margin-top: 0;
+        bottom: 0;
+        top: auto;
+        background-position: bottom left;
+        max-height: 128vw;
+        min-height: 0
+    }
+}
+
+@media only screen and (max-aspect-ratio: 75 / 100) and (min-aspect-ratio: 1 / 10000) and (min-width: 0px) and (max-width: 1068px) and (max-width: 1068px) {
+    .gallery-container #homepage-gallery-iphone-7 .gallery-image-iphone {
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-aspect-ratio: 75 / 100) and (min-aspect-ratio: 1 / 10000) and (min-width: 0px) and (max-width: 1068px) and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-aspect-ratio: 75 / 100) and (min-aspect-ratio: 1 / 10000) and (min-width: 0px) and (max-width: 1068px) and (max-width: 1068px) and (min-resolution: 1.5dppx),
+only screen and (max-aspect-ratio: 75 / 100) and (min-aspect-ratio: 1 / 10000) and (min-width: 0px) and (max-width: 1068px) and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .gallery-container #homepage-gallery-iphone-7 .gallery-image-iphone {
+    }
+}
+
+@media only screen and (max-aspect-ratio: 75 / 100) and (min-aspect-ratio: 1 / 10000) and (min-width: 0px) and (max-width: 1068px) and (max-width: 735px) {
+    .gallery-container #homepage-gallery-iphone-7 .gallery-image-iphone {
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-aspect-ratio: 75 / 100) and (min-aspect-ratio: 1 / 10000) and (min-width: 0px) and (max-width: 1068px) and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-aspect-ratio: 75 / 100) and (min-aspect-ratio: 1 / 10000) and (min-width: 0px) and (max-width: 1068px) and (max-width: 735px) and (min-resolution: 1.5dppx),
+only screen and (max-aspect-ratio: 75 / 100) and (min-aspect-ratio: 1 / 10000) and (min-width: 0px) and (max-width: 1068px) and (max-width: 735px) and (min-resolution: 144dpi) {
+    .gallery-container #homepage-gallery-iphone-7 .gallery-image-iphone {
+    }
+}
+
+@media only screen and (max-aspect-ratio: 75 / 100) and (min-aspect-ratio: 1 / 10000) and (min-width: 0px) and (max-width: 1068px) and (max-width: 1068px) and (min-width: 769px) {
+    .gallery-container #homepage-gallery-iphone-7 .gallery-image-iphone {
+        left: 0;
+        background-position: bottom center
+    }
+}
+
+@media only screen and (max-aspect-ratio: 75 / 100) and (min-aspect-ratio: 1 / 10000) and (min-width: 0px) and (max-width: 1068px) and (max-width: 735px) and (min-width: 500px) {
+    .gallery-container #homepage-gallery-iphone-7 .gallery-image-iphone {
+        left: 0;
+        background-position: bottom center
+    }
+}
+
+.no-enhanced-gallery .gallery-container #homepage-gallery-iphone-7 {
+    height: 757px;
+    background: #cc3341;
+    padding-top: 0
+}
+
+@media only screen and (max-width: 1068px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-iphone-7 {
+        height: 620px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-iphone-7 {
+        height: 450px
+    }
+}
+
+.no-enhanced-gallery .gallery-container #homepage-gallery-iphone-7 .gallery-item-copy-wrapper {
+    height: auto;
+    top: 40px;
+    min-height: 0
+}
+
+@media only screen and (max-width: 735px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-iphone-7 .gallery-item-copy-wrapper {
+        top: 34px
+    }
+}
+
+.no-enhanced-gallery .gallery-container #homepage-gallery-iphone-7 .gallery-item-copy-wrapper .inner {
+    position: relative;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    top: 0
+}
+
+.no-enhanced-gallery .gallery-container #homepage-gallery-iphone-7 .gallery-item-image-element {
+    height: 100%
+}
+
+.no-enhanced-gallery .gallery-container #homepage-gallery-iphone-7 .gallery-image-iphone {
+    width: 735px;
+    height: 550px;
+    background-size: 735px 550px;
+    background-repeat: no-repeat;
+    left: 50%;
+    margin-left: -367.5px;
+    position: relative;
+    background-position: top center;
+    max-height: none;
+    position: absolute;
+    top: 206px;
+    bottom: auto;
+    min-height: 0px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 1.5dppx),
+(-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-iphone-7 .gallery-image-iphone {
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-iphone-7 .gallery-image-iphone {
+        width: 695px;
+        height: 520px;
+        background-size: 695px 520px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-iphone-7 .gallery-image-iphone {
+        background-image: url("http://images.apple.com/v/home/de/images/stacked/iphone7_productred_medium_2x.png")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-iphone-7 .gallery-image-iphone {
+        width: 400px;
+        height: 300px;
+        background-size: 400px 300px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-iphone-7 .gallery-image-iphone {
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-iphone-7 .gallery-image-iphone {
+        left: 50%;
+        margin-left: -347.5px;
+        position: relative
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-iphone-7 .gallery-image-iphone {
+        left: 50%;
+        margin-left: -200px;
+        position: relative
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-iphone-7 .gallery-image-iphone {
+        top: 180px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-iphone-7 .gallery-image-iphone {
+        top: 150px
+    }
+}
+
+.gallery-container #homepage-gallery-apple-watch-series-2 *:not(.backing-link) {
+    pointer-events: none
+}
+
+.gallery-container #homepage-gallery-apple-watch-series-2 a:not(.backing-link) {
+    pointer-events: all;
+    position: relative;
+    z-index: 4
+}
+
+.gallery-container #homepage-gallery-apple-watch-series-2 .backing-link,
+.gallery-container #homepage-gallery-apple-watch-series-2 .backing-link:hover {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: auto;
+    right: auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: all;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    opacity: 1;
+    z-index: 2
+}
+
+html.ie .gallery-container #homepage-gallery-apple-watch-series-2 .backing-link,
+html.ie .gallery-container #homepage-gallery-apple-watch-series-2 .backing-link:hover {
+    z-index: 5
+}
+
+.gallery-container #homepage-gallery-apple-watch-series-2 .gallery-item-content {
+    background: #f2f2f2;
+    height: 100%;
+    display: block;
+    z-index: 1000;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none
+}
+
+.gallery-container #homepage-gallery-apple-watch-series-2 .gallery-item-copy-wrapper {
+    position: absolute;
+    top: 44px;
+    height: 26%;
+    left: 0;
+    right: 0
+}
+
+@media only screen and (max-width: 735px) {
+    .gallery-container #homepage-gallery-apple-watch-series-2 .gallery-item-copy-wrapper {
+        top: 48px;
+        height: 33%
+    }
+}
+
+.gallery-container #homepage-gallery-apple-watch-series-2 .gallery-item-copy-wrapper .inner {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.gallery-container #homepage-gallery-apple-watch-series-2 .logo-image-watch {
+    width: 122px;
+    height: 44px;
+    background-size: 122px 44px;
+    background-repeat: no-repeat;
+    margin: 7px auto 10px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 1.5dppx),
+(-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi) {
+    .gallery-container #homepage-gallery-apple-watch-series-2 .logo-image-watch {
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .gallery-container #homepage-gallery-apple-watch-series-2 .logo-image-watch {
+        width: 83px;
+        height: 30px;
+        background-size: 83px 30px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .gallery-container #homepage-gallery-apple-watch-series-2 .logo-image-watch {
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .gallery-container #homepage-gallery-apple-watch-series-2 .logo-image-watch {
+        margin-top: 5px;
+        margin-bottom: 2px
+    }
+}
+
+.gallery-container #homepage-gallery-apple-watch-series-2 .gallery-item-image-element {
+    top: -webkit-calc(44px + 26%);
+    top: calc(44px + 26%);
+    height: -webkit-calc(78% - 44px);
+    height: calc(78% - 44px)
+}
+
+@media only screen and (max-width: 735px) {
+    .gallery-container #homepage-gallery-apple-watch-series-2 .gallery-item-image-element {
+        top: -webkit-calc(16% + 36px + 48px);
+        top: calc(16% + 36px + 48px);
+        height: -webkit-calc(84% - 36px - 48px);
+        height: calc(84% - 36px - 48px)
+    }
+}
+
+.gallery-container #homepage-gallery-apple-watch-series-2 .gallery-image-watch {
+    position: absolute;
+    z-index: 1;
+    height: 138%;
+    width: 94%;
+    left: 3%;
+    -webkit-transform: translateY(-27%);
+    -ms-transform: translateY(-27%);
+    transform: translateY(-27%);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    max-height: 98.16456vw
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 1.5dppx),
+(-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi) {
+    .gallery-container #homepage-gallery-apple-watch-series-2 .gallery-image-watch {
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .gallery-container #homepage-gallery-apple-watch-series-2 .gallery-image-watch {
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .gallery-container #homepage-gallery-apple-watch-series-2 .gallery-image-watch {
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .gallery-container #homepage-gallery-apple-watch-series-2 .gallery-image-watch {
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .gallery-container #homepage-gallery-apple-watch-series-2 .gallery-image-watch {
+    }
+}
+
+@media screen and (max-aspect-ratio: 75 / 100) and (min-aspect-ratio: 1 / 10000) and (min-width: 736px) and (max-width: 1068px) {
+    .gallery-container #homepage-gallery-apple-watch-series-2 .gallery-image-watch {
+        -webkit-transform: translateY(-23%);
+        -ms-transform: translateY(-23%);
+        transform: translateY(-23%)
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .gallery-container #homepage-gallery-apple-watch-series-2 .gallery-image-watch {
+        -webkit-transform: translateY(-57%);
+        -ms-transform: translateY(-57%);
+        transform: translateY(-57%);
+        background-position: center center;
+        top: 50%
+    }
+}
+
+.no-enhanced-gallery .gallery-container #homepage-gallery-apple-watch-series-2 {
+    height: 757px;
+    padding-top: 0
+}
+
+@media only screen and (max-width: 1068px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-apple-watch-series-2 {
+        height: 620px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-apple-watch-series-2 {
+        height: 450px
+    }
+}
+
+.no-enhanced-gallery .gallery-container #homepage-gallery-apple-watch-series-2 .gallery-item-copy-wrapper {
+    height: auto;
+    top: 70px;
+    min-height: 0
+}
+
+@media only screen and (max-width: 1068px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-apple-watch-series-2 .gallery-item-copy-wrapper {
+        top: 60px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-apple-watch-series-2 .gallery-item-copy-wrapper {
+        top: 50px
+    }
+}
+
+.no-enhanced-gallery .gallery-container #homepage-gallery-apple-watch-series-2 .gallery-item-copy-wrapper .inner {
+    position: relative;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    top: 0
+}
+
+.no-enhanced-gallery .gallery-container #homepage-gallery-apple-watch-series-2 .gallery-item-image-element {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: relative
+}
+
+.no-enhanced-gallery .gallery-container #homepage-gallery-apple-watch-series-2 .gallery-image-watch {
+    width: 700px;
+    height: 600px;
+    background-size: 700px 600px;
+    background-repeat: no-repeat;
+    left: 50%;
+    margin-left: -350px;
+    position: relative;
+    background-position: top center;
+    max-height: none;
+    top: 180px;
+    bottom: auto;
+    position: absolute;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 1.5dppx),
+(-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-apple-watch-series-2 .gallery-image-watch {
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-apple-watch-series-2 .gallery-image-watch {
+        width: 607px;
+        height: 520px;
+        background-size: 607px 520px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-apple-watch-series-2 .gallery-image-watch {
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-apple-watch-series-2 .gallery-image-watch {
+        width: 350px;
+        height: 300px;
+        background-size: 350px 300px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-apple-watch-series-2 .gallery-image-watch {
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-apple-watch-series-2 .gallery-image-watch {
+        left: 50%;
+        margin-left: -303.5px;
+        position: relative
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-apple-watch-series-2 .gallery-image-watch {
+        left: 50%;
+        margin-left: -175px;
+        position: relative
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-apple-watch-series-2 .gallery-image-watch {
+        top: 130px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .no-enhanced-gallery .gallery-container #homepage-gallery-apple-watch-series-2 .gallery-image-watch {
+        top: 132px
+    }
+}
+
+#homepage-banner-redcross.homepage-banner .redcross-banner-wrapper {
+    text-align: center
+}
+
+#homepage-banner-redcross.homepage-banner .redcross-banner-wrapper .visuallyhidden {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0
+}
+
+#homepage-banner-redcross.homepage-banner .redcross-banner-wrapper .redcross-banner {
+    position: relative;
+    display: inline-block;
+    padding: 20px 0
+}
+
+#homepage-banner-redcross.homepage-banner .redcross-banner-wrapper .redcross-banner .redcross-link {
+    margin-left: 4px
+}
+
+@media only screen and (max-width: 735px) {
+    #homepage-banner-redcross.homepage-banner .redcross-banner-wrapper .redcross-banner .redcross-link {
+        display: block;
+        margin-left: 0
+    }
+}
+
+#homepage-banner-redcross.homepage-banner .redcross-banner-wrapper .redcross-banner .redcross-copy {
+    margin-left: 201px;
+    display: inline-block;
+    border-left: 1px solid #d6d6d6;
+    padding-left: 22px
+}
+
+@media only screen and (max-width: 735px) {
+    #homepage-banner-redcross.homepage-banner .redcross-banner-wrapper .redcross-banner .redcross-copy {
+        margin-left: 0;
+        border-left: 0;
+        padding-left: 0;
+        display: block
+    }
+}
+
+#homepage-banner-redcross.homepage-banner .redcross-banner-wrapper .redcross-banner .image-redcross-logo {
+    width: 179px;
+    height: 44px;
+    background-size: 179px 44px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 13px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 1.5dppx),
+(-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi) {
+    #homepage-banner-redcross.homepage-banner .redcross-banner-wrapper .redcross-banner .image-redcross-logo {
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    #homepage-banner-redcross.homepage-banner .redcross-banner-wrapper .redcross-banner .image-redcross-logo {
+        position: relative;
+        top: auto;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        margin: 0 auto 4px
+    }
+}
+
+#homepage-banner-redcross.homepage-banner .redcross-banner-wrapper .exchange {
+    padding-left: 40px
+}
+
+@media only screen and (max-width: 1068px) {
+    #homepage-banner-redcross.homepage-banner .redcross-banner-wrapper .exchange {
+        padding-left: 0
+    }
+}
+
+.no-enhanced-gallery .gallery-container {
+    padding-top: 44px
+}
+
+@media only screen and (max-width: 735px) {
+    .no-enhanced-gallery .gallery-container {
+        padding-top: 48px
+    }
+}
+
+.no-enhanced-gallery .gallery-container .backing-link {
+    z-index: 3 !important
+}

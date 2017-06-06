@@ -1,0 +1,117 @@
+form {
+    border-radius: 15px;
+    width: 80%;
+    margin: 5% auto;
+    background-color: #ececec;
+    overflow: hidden;
+}
+
+p span {
+    color: #ff0000;
+}
+
+p {
+    margin: 0px;
+    font-weight: 500;
+    line-height: 2;
+    color: #151515;
+}
+
+section {
+    margin: 0px;
+    font-weight: 8900;
+    line-height: 2;
+    color: #151515;
+}
+
+input[type="text"] {
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #eee;
+    margin-bottom: 15px;
+    width: 75%;
+    height: 40px;
+    float: left;
+    padding: 0px 15px;
+}
+
+select {
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #eee;
+    margin-bottom: 15px;
+    width: 75%;
+    height: 40px;
+    float: left;
+    padding: 0px 15px;
+}
+
+a {
+    color: #ff0000;
+}
+
+a:hover {
+    color: #3b00ff;
+}
+
+textarea {
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #EEE;
+    width: 80%;
+    height: 130px;
+
+}
+
+.form-group {
+    overflow: hidden;
+    clear: both;
+}
+
+.form-group1 {
+    overflow: hidden;
+    clear: both;
+}
+.form-control {
+    width: 75%;
+}
+
+.icon-case {
+    width: 35px;
+    float: left;
+    border-radius: 5px 0px 0px 5px;
+    background: #eeeeee;
+    height: 42px;
+    position: relative;
+    text-align: center;
+    line-height: 42px;
+}
+
+.contentform {
+    padding: 40px 30px;
+    width: 100%;
+}
+
+.botton-contact {
+
+    color: #ffaf00;
+    text-align: center;
+    width: 100%;
+    border: 0;
+    padding: 10px 25px;
+    border-radius: 0px 0px 5px 5px;
+    cursor: pointer;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.leftcontact {
+    width: 49.5%;
+    float: left;
+    border-right: 1px dotted #CCC;
+    box-sizing: border-box;
+    padding: 0px 15px 0px 0px;
+}
+
+.rightcontact {
+    width: 49.5%;
+    float: right;
+    box-sizing: border-box;
+    padding: 0px 0px 0px 15px;
