@@ -1,3 +1,60 @@
+<?php 
+
+if(isset($_POST['submit'])){
+$EmailTo = "shoby42@hotmail.com";
+$EmailCC = "";
+$EmailFrom = "admin@tasbeeh.dx.am";
+$EmailSubject = $_POST['subject'];
+//$EmailMessage = "<html>Test email</html>";
+$name = $_POST['name'];
+$message = $name . " " . " wrote the following:" . "\r\n\r\n" . $_POST['message'];
+
+ $EmailMessage = $message;
+ 
+ //echo $EmailMessage;
+ 
+ SendHtmlEmail($EmailTo, $EmailCC, $EmailFrom, $EmailSubject, $EmailMessage);
+  
+
+}
+
+
+	function SendHtmlEmail($to, $cc , $from, $subject, $message)
+	{
+		
+		//$to = "shoaib@wipath.com.au";
+		//$subject = "Test email";
+		//$message = "This is a test email";
+		//$from = "wipathorders@wipath.dx.am";  
+		
+		// To send HTML mail, the Content-type header must be set
+		$headers  = 'MIME-Version: 1.0' . "\r\n";
+		$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+		// Additional headers
+		//$headers .= 'To: Mary <mary@example.com>, Kelly <kelly@example.com>' . "\r\n";
+		$headers .= 'From:' . $from . "\r\n";
+		$headers .= 'Cc:' . $cc . "\r\n";
+		//$headers .= 'Bcc: birthdaycheck@example.com' . "\r\n";
+
+
+		if(!filter_var($from, FILTER_VALIDATE_EMAIL)){
+			die('Invalid email address.');	
+		}
+		
+		if (mail($to,$subject,$message,$headers)){
+			// Success
+			echo "Thank you for contacting us" . $first_name . ", we will contact you shortly.";
+		}
+		else{
+			// Error
+			echo 'Error Sending Email';
+		}
+
+	}
+?>
+
+
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -69,49 +126,29 @@
                 </div>
             </nav>
             <div class="clearfix"></div>
+
             <div class="clearfix"></div>
         </header>
         <!--End Header-->
         <!--Start Banner Section-->
         <section id="banner">
             <!--Start Container-->
-            <div class="container" style="padding-bottom: 0px;"> </div>
+            <div class="container" style="padding-bottom: 100px;">
+                
+            </div>
         </section>
         <!--End Banner Section-->
         <!--Start Benefits Section-->
-        <section>
-            <!--Start Container-->
-            <div class="container">
-                <!--Start Heading Row-->
-                <div class="row">
-                    <!--Start Heading content-->
-                    <!--End Heading content-->
-                </div>
-                <!--End Heading Row-->
-                <!--Start About Row-->
-                <div class="row">
-                    <!--Start About Image-->
-                    <div class="col-md-12">
-                        <div class="about-img wow fadeIn" data-wow-delay="0.2s">
-                            <h3 class="font-700 wow fadeInUp" data-wow-delay="0.1s">سبحان الله و بحمده سبحان الله العظيم </h3>
-                            <p style="padding-bottom: 10px;">
-                                <br><strong>Reward:</strong> Narrated Abu Huraira: Allah’s Apostle said, “Whoever says, ‘Subhan Allaahi Wa bihamdihi, {Allah is free from imperfection and His is the praise}. One hundred times a day, will be forgiven all his sins even if they were as much as the foam of the sea. (Bukhari, Book #75, Hadith #414)</p>
-                            <hr>
-                            <h3 class="font-700 wow fadeInUp" data-wow-delay="0.1s">سبحان الله</h3>
-                            <p style="padding-bottom: 10px;">
-                                <br><strong>Reward:</strong> Prophet Muhammad (Peace be upon him) said: “Is anyone of you incapable of earning one thousand Hasanah (rewards) a day?” Someone from the gathering asked, “How can anyone of us earn a thousand Hasanah?” Prophet Muhammad (Peace be upon him) said: “Glorify Allah a hundred times by just saying “Subhanallah” and a Good deeds will be written for you, or a thousand sins will be wiped away.” (Muslim 4:2073)</p>
-                            <hr>
-                            <h3 class="font-700 wow fadeInUp" data-wow-delay="0.1s">لا إله إلا الله وحده لا شريك له له الملك وله الحمد وهو على كل شيء قدير</h3>
-                            <p style="padding-bottom: 10px;">
-                                <br><strong>Reward:</strong> Abu Hurairah (May Allah be pleased with him) reported: The Messenger of Allah (PBUH) said, “He who utters a hundred times in a day these words: `La ilaha illallahu, wahdahu la sharika lahu, lahul-mulku wa lahul-hamdu, wa Huwa `ala kulli sha’in Qadir (there is no true god except Allah. He is One and He has no partner with Him; His is the sovereignty and His is the praise, and He is Omnipotent),’ he will have a reward equivalent to that for emancipating ten slaves, a hundred good deeds will be recorded to his credit, hundred of his sins will be blotted out from his scroll, and he will be safeguarded against the devil on that day till the evening; and no one will exceed him in doing more excellent good deeds except someone who has recited these words more often than him. And he who utters: `Subhan- Allahi wa bihamdihi (Allah is free from imperfection and His is the praise)’ one hundred times a day, his sins will be obliterated even if they are equal to the extent of the foam of the ocean.” [Al-Bukhari and Muslim].</p>
-                            <hr> </div>
-                    </div>
-                </div>
-                <!--End About Row-->
-            </div>
-            <!--End Container-->
-        </section>
-        <!--End About Section-->
+
+
+
+
+
+
+
+
+
+
         <!--Start Footer-->
         <footer id="footer">
             <!--Start Container-->
@@ -166,3 +203,9 @@
 </body>
 
 </html>
+
+
+
+
+
+
